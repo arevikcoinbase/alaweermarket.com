@@ -636,9 +636,11 @@
             }
 
             .py-lg-4 {
-                padding-top: 0rem;
+                padding-top: 1rem;
                 padding-bottom: 0rem;
             }
+
+            
 
             .py-lg-5 {
                 padding-top: 0.2rem;
@@ -722,6 +724,16 @@
             }
         }
 
+        
+        @media (max-width: 800px) {
+
+            .generatedImage,
+            .description {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
 
          .highlight{
             color:#e02f46 !important;
@@ -736,6 +748,23 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .productDescrription {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.pb-3, .py-3 {
+    padding-bottom: 1rem !important;
+}
+.pt-3, .py-3 {
+    padding-top: 1rem !important;
+}
     </style>
 
     <script>
@@ -803,7 +832,6 @@
             </div>
         </header>
 
-        <div class="py-4 py-lg-5"></div>
 
         <div class="py-3 py-lg-4"></div>
 
