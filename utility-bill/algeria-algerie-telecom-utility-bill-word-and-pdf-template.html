@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utility Bill Templates</title>
-    <link rel="canonical" href="https://alaweermarket.com" />
+    <title>Albania Albanian Power Corporation</title>
+    <link rel="canonical" href="https://alaweermarket.com">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
@@ -24,11 +21,14 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="vendor/css/select2.min.css">
     <link rel="stylesheet" href="https://alaweermarket.com/vendor/css/jquery-ui.bundle.css">
-    <link rel="stylesheet" href="assets/css/styleWithoutHamburger.css">
+    <link rel="stylesheet" href="../assets/css/styleWithoutHamburger.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
     <style>
         /* Color variables */
         :root {
@@ -627,7 +627,6 @@
                 margin: 0 auto;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-
             }
 
             .custom_div_flex {
@@ -643,9 +642,11 @@
             }
 
             .py-lg-4 {
-                padding-top: 0rem;
+                padding-top: 1rem;
                 padding-bottom: 0rem;
             }
+
+
 
             .py-lg-5 {
                 padding-top: 0.2rem;
@@ -657,21 +658,9 @@
             }
 
             .custom_div_flex {
-                /* flex-basis: 80px; */
+                flex-basis: 80px;
             }
 
-        }
-
-
-        @media (max-width: 575px) {
-            .custom_d_flex {
-                flex-direction: row;
-                /* gap: 50px; */
-            }
-
-            .custom_div_flex {
-                /* margin: 0 20px 0 20px; */
-            }
         }
 
         .productDescrription {
@@ -743,6 +732,16 @@
         }
 
 
+        @media (max-width: 800px) {
+
+            .generatedImage,
+            .description {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+
         .highlight {
             color: #e02f46 !important;
         }
@@ -755,8 +754,126 @@
 
             }
         }
-    </style>
 
+        @media only screen and (max-width: 800px) {
+            .productDescrription {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .pb-3,
+        .py-3 {
+            padding-bottom: 1rem !important;
+        }
+
+        .pt-3,
+        .py-3 {
+            padding-top: 1rem !important;
+        }
+
+
+        .bold {
+            font-weight: bold;
+        }
+
+
+        ul {
+            margin-left: 5px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: #1f1f1f;
+            padding-left: 5px;
+        }
+
+        .bold {
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        /* Custom bullet styles */
+        .features-list {
+            list-style-type: none;
+        }
+
+        .features-list li::before {
+            content: "";
+            background-color: #1f1f1f;
+            display: inline-block;
+            width: 0.5em;
+            /* Smaller circle width */
+            height: 0.5em;
+            /* Smaller circle height */
+            border-radius: 50%;
+            /* This makes it circular */
+            margin-right: 0.6em;
+            /* Space between circle and text */
+            margin-left: -1.2em;
+        }
+
+        .reasons-list {
+            list-style-type: none;
+        }
+
+        .reasons-list li::before {
+            content: "✓";
+            color: #39bc4f;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.2em;
+            margin-left: -1.2em;
+            font-size: 1.1em;
+        }
+
+        .files-list {
+            list-style-type: none;
+        }
+
+        .files-list li::before {
+            content: "";
+            /* Empty content */
+            background-color: #1f1f1f;
+            /* Circle color */
+            display: inline-block;
+            width: 0.5em;
+            /* Smaller circle width */
+            height: 0.5em;
+            /* Smaller circle height */
+            border-radius: 50%;
+            /* This makes it circular */
+            margin-right: 0.6em;
+            /* Space between circle and text */
+            margin-left: -1.2em;
+        }
+
+        @media (max-width: 992px) {
+            .description {
+                margin-top: 7%;
+            }
+        }
+
+
+
+        @media (max-width: 992px) and (min-width:800px) {
+
+            .generatedImage,
+            .description {
+                width: 100%;
+            }
+
+            .generatedImage {
+                margin-left: 0%;
+                margin-bottom: 0px;
+            }
+        }
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger');
@@ -787,10 +904,8 @@
         <!--Navigation-->
         <nav>
             <div class="container cust">
-                <a href="/" class="logo">
-                    <img style="max-width: 210px;max-height: 90px;" src="./assets/favicon_io/android-chrome-192x192.png"
-                        alt="Logo">
-
+                <a href="../index.html" class="logo">
+                    <img style="max-width: 210px;max-height: 90px;" src="../assets/favicon_io/android-chrome-192x192.png" alt="Logo">
                 </a>
 
                 <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -800,13 +915,13 @@
                 </button>
 
                 <div class="nav-menu">
-                    <a href="./index.html#home">Home</a>
-                    <a href="./index.html#about">About Us</a>
-                    <a href="./index.html#services">Services</a>
-                    <a href="./index.html#specialties">Our Specialties</a>
-                    <a href="./index.html#gallery">Gallery</a>
-                    <a href="./index.html#contactus">Contact us</a>
-                    <a class="highlight" href="#utility-bill-header">Utility Bill</a>
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">About Us</a>
+                    <a href="../index.html#services">Services</a>
+                    <a href="../index.html#specialties">Our Specialties</a>
+                    <a href="../index.html#gallery">Gallery</a>
+                    <a href="../index.html#contactus">Contact us</a>
+                    <a class="highlight" href="../utility-bill.html">Utility Bill</a>
                 </div>
             </div>
         </nav>
@@ -819,121 +934,74 @@
         <header class="headbar bg-green text-white" id="utility-bill-header">
             <div class="headbar-inner fluid">
                 <div class="headbar-title h-auto">
-                    <div class="display-2 h1-mb  fw-bold" style="line-height: normal;">UTILITY BILL - sample templates PDF, DOC, XLS and PSD | editable format</div>
+                    <div class="display-2 h1-mb  fw-bold" style="line-height: normal;">UTILITY BILL - sample templates
+                        PDF, DOC, XLS and PSD | editable format</div>
                 </div>
             </div>
         </header>
 
-        <div class="py-4 py-lg-5"></div>
-
-        <div class="fluid">
-            <div class="title-dash position-relative">
-                <h1 class="h1 h3-mb fw-bolder lh-sm">Utility bill templates</h1>
-                <b class="title-dash-line bg-primary"></b>
-            </div>
-        </div>
 
         <div class="py-3 py-lg-4"></div>
 
-        <div class="d-flex custom_d_flex">
-            <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/albania-albanian-power-corporation.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Albania Albanian Power Corporation.jpg"
-                        alt="Albania Albanian Power Corporation">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
+        <div class="productDescrription">
+            <div class="generatedImage">
+                <img src="https://alaweermarket.com//utility-bill/images/Algeria Algerie Telecom utility bill Word and PDF template.jpg">
+            </div>
+            <div class="description">
+                <h1>अल्जीरिया अल्जीरी दूरसंचार उपयोगिता बिल वर्ड और पीडीएफ टेम्पलेट – संपादन योग्य PDF / Word / Excel</h1>
+                <h3 style="color: #1f1f1f;">उत्पाद विवरण:</h3>
+                <p id="Metadescription">
+                    <span class="bold">वास्तविक अल्बानिया बिजली बिल टेम्पलेट</span>
+                    <span class="bold">PDF, Word और Excel फ़ॉर्मेट</span> में डाउनलोड करें।
+                    यह पूरी तरह <span class="bold">संपादन योग्य और प्रिंटेबल</span> है।
+                    यह <span class="bold">यूटिलिटी बिल सैंपल</span>
+                    <span class="bold">पता प्रमाण, मॉकअप्स, प्रशिक्षण प्रोजेक्ट्स</span>
+                    या <span class="bold">सॉफ़्टवेयर टेस्टिंग</span> के लिए बिल्कुल सही है।
+                </p>
+
+                <h3 style="color: #1f1f1f;">विशेषताएँ:</h3>
+                <ul class="features-list">
+                    <li><span class="bold">Word, PDF और Excel</span> में संपादन योग्य</li>
+                    <li><span class="bold">हाई-रेज़ोल्यूशन</span> और प्रोफेशनल डिज़ाइन</li>
+                    <li><span class="bold">ग्राहक विवरण, बिल सारांश, उपयोग इतिहास</span> और बारकोड के लिए सेक्शन</li>
+                    <li><span class="bold">खाली प्रिंट</span> किया जा सकता है या <span class="bold">डिजिटली
+                            कस्टमाइज़</span> किया जा सकता है</li>
+                </ul>
+
+                <h3 style="color: #1f1f1f;">क्यों चुनें यह टेम्पलेट?</h3>
+                <ul class="reasons-list">
+                    <li><span class="bold">असली लेआउट</span>, आसानी से एडिट करने योग्य</li>
+                    <li><span class="bold">पता प्रमाण</span> डेमो के लिए परफेक्ट</li>
+                    <li><span class="bold">UI/UX मॉकअप्स, शैक्षिक उपयोग या फॉर्म वेलिडेशन</span> के लिए बेहतरीन</li>
+                    <li><span class="bold">Excel संस्करण में ऑटोमैटिक कैलकुलेशन</span> (कुल और उपयोग के लिए) शामिल</li>
+                </ul>
+
+                <h3 style="color: #1f1f1f;">शामिल फाइलें:</h3>
+                <ul class="files-list">
+                    <li>1x Word (docx)</li>
+                    <li>1x PDF</li>
+                    <li>1x Excel (xlsx)</li>
+                </ul>
+
+                <p id="Metadescription">👉 तुरंत डाउनलोड करें, कस्टमाइज़ करें और कुछ ही मिनटों में अपना यूटिलिटी बिल
+                    सैंपल बनाएं।</p>
+                <br>
+                <div style="width: 100%;margin-bottom: 7%;">
+                    <a href="https://extempl.com/product-category/utility-bill-pdf-examples/">
+                        <img style="width: 100%;" src="./images/download-20.png" alt="टेम्पलेट डाउनलोड करें">
+                    </a>
+                </div>
+                <p style="margin-bottom: 4%;">अभी डाउनलोड करें और जल्दी से उच्च-गुणवत्ता वाले डिज़ाइन तैयार करें!</p>
+
+                <div class="contacts">
+                    <p>telegram: <a href="https://t.me/pretempl">axtempl</a></p>
+                    <p>whatsapp: <a href="https://wa.me/37253725910">+372 5372 5910</a></p>
+                    <p>email: <a href="mailto:gotemply@gmail.com">gotemply@gmail.com</a></p>
+                    <p>facebook: <a href="https://m.me/Oxtempl">oxtempl</a></p>
+                </div>
             </div>
 
-                   <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/algeria-algerie-telecom-utility-bill-word-and-pdf-template.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Algeria Algerie Telecom utility bill Word and PDF template.jpg"
-                        alt="Algeria Algerie Telecom utility bill Word and PDF template">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
 
-                 <div class="custom_div_flex">
-                <a href="./utility-bill/algeria-algerie-telecom-utility-bill-word-and-pdf-template.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Algeria Algerie Telecom utility bill Word and PDF template.jpg"
-                        alt="Algeria Algerie Telecom utility bill Word and PDF template">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
-
-                 <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/algeria-algerie-telecom-utility-bill-word-and-pdf-template">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Algeria Algerie Telecom utility bill Word and PDF template.jpg"
-                        alt="Algeria Algerie Telecom utility bill Word and PDF template">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
-
-            <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/albania-albanian-power-corporation.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Albania Albanian Power Corporation.jpg"
-                        alt="Albania Albanian Power Corporation">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
-
-              <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/albania-albanian-power-corporation.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Albania Albanian Power Corporation.jpg"
-                        alt="Albania Albanian Power Corporation">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
-
-              <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/albania-albanian-power-corporation.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Albania Albanian Power Corporation.jpg"
-                        alt="Albania Albanian Power Corporation">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
-
-              <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/albania-albanian-power-corporation.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Albania Albanian Power Corporation.jpg"
-                        alt="Albania Albanian Power Corporation">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
-           
-              <div class="custom_div_flex">
-                <a href="https://alaweermarket.com/utility-bill/albania-albanian-power-corporation.html">
-                    <img class="custome_image_class" loading="lazy"
-                        src="https://alaweermarket.com//utility-bill/images/Albania Albanian Power Corporation.jpg"
-                        alt="Albania Albanian Power Corporation">
-                </a>
-                <a
-                    href="https://alaweermarket.com/utility-bill/yemen-schneider-electric-utility-bill-download-template-in-word-and-pdf-format.html">Albania
-                    Albanian Power Corporation</a>
-            </div>
 
         </div>
 
@@ -951,6 +1019,6 @@
             </div>
         </div>
     </section>
-</body>
 
-</html>
+
+</body></html>
