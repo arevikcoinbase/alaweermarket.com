@@ -32,8 +32,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
-      <style>
-            /* Color variables */
+    <style>
+        /* Color variables */
         :root {
             --red: #e02f46;
             --green: #39bc4f;
@@ -45,7 +45,7 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
+            /* padding: 0 15px; */
         }
 
         .bg-green {
@@ -112,7 +112,7 @@
             padding-bottom: 2rem;
         }
 
-       
+
         /* Navigation */
         /* nav {
             background-color: white;
@@ -147,7 +147,8 @@
             margin: 3px 0;
             transition: 0.3s;
         }
-/*
+
+        /*
         .nav-menu {
             display: flex;
             gap: 1.5rem;
@@ -259,7 +260,7 @@
             margin-top: 2rem;
         }
 
-       .mastfoot-inner {
+        .mastfoot-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -323,7 +324,7 @@
             background-color: #212529;
         }
 
- .custom_d_flex {
+        .custom_d_flex {
             display: flex;
             flex-wrap: wrap;
             gap: 40px;
@@ -338,7 +339,7 @@
             text-align: center;
         }
 
-    
+
         /* ---------- Responsive Adjustments ---------- */
 
         /* Large devices (desktops, 992px and up) */
@@ -346,7 +347,7 @@
             .custom_d_flex {
                 gap: 2rem;
             }
-            
+
             .custom_div_flex {
                 flex: 0 0 calc(33.333% - 2rem);
             }
@@ -422,7 +423,7 @@
                 gap: 1.2rem;
             }
 
-             .custom_div_flex {
+            .custom_div_flex {
                 flex: 0 0 100%;
             }
 
@@ -430,7 +431,8 @@
                 padding: 1.5rem 0;
             }
 
-            .py-4, .py-lg-5 {
+            .py-4,
+            .py-lg-5 {
                 padding-top: 1rem;
                 padding-bottom: 1rem;
             }
@@ -465,7 +467,8 @@
                 margin-bottom: 1rem;
             }
 
-            .py-3, .py-lg-4 {
+            .py-3,
+            .py-lg-4 {
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
             }
@@ -485,11 +488,11 @@
             .display-2 {
                 font-size: 1.4rem;
             }
-            
+
             .logo img {
-                height: 30px;
+                /* height: 30px; */
             }
-            
+
             .cust {
                 padding: 0.5rem 15px;
             }
@@ -538,7 +541,7 @@
                 text-align: center;
             }
 
-          
+
 
             .productDescrription {
                 width: 80%;
@@ -646,7 +649,7 @@
                 padding-bottom: 0rem;
             }
 
-            
+
 
             .py-lg-5 {
                 padding-top: 0.2rem;
@@ -672,14 +675,14 @@
             font-family: "GoogleFont", sans-serif;
         }
 
-            
+
         .generatedImage,
         .description {
             width: 40%;
             text-align: left;
         }
-        
-        
+
+
 
         .generatedImage img {
             width: 80%;
@@ -718,19 +721,20 @@
 
 
 
-         @media (max-width: 992px) {
+        @media (max-width: 992px) {
 
-                .generatedImage, .description {
+            .generatedImage,
+            .description {
                 width: 100%;
             }
 
-            .generatedImage{
+            .generatedImage {
                 margin-left: 10%;
                 margin-bottom: 80px;
             }
         }
 
-        
+
         @media (max-width: 800px) {
 
             .generatedImage,
@@ -741,39 +745,42 @@
         }
 
 
-         .highlight{
-            color:#e02f46 !important;
+        .highlight {
+            color: #e02f46 !important;
         }
 
 
         @media (max-width: 991px) {
-    .nav-menu {
-        position: absolute;
-        margin-top: 90px;
+            .nav-menu {
+                position: absolute;
+                margin-top: 90px;
 
-    }
-}
+            }
+        }
 
-@media only screen and (max-width: 800px) {
-    .productDescrription {
-        flex-direction: column;
-        width: 100%;
-    }
-}
+        @media only screen and (max-width: 800px) {
+            .productDescrription {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
 
-body{
-    margin: 0;
-}
+        body {
+            margin: 0;
+        }
 
-.pb-3, .py-3 {
-    padding-bottom: 1rem !important;
-}
-.pt-3, .py-3 {
-    padding-top: 1rem !important;
-}
+        .pb-3,
+        .py-3 {
+            padding-bottom: 1rem !important;
+        }
+
+        .pt-3,
+        .py-3 {
+            padding-top: 1rem !important;
+        }
 
 
-     .bold {
+        .bold {
             font-weight: bold;
         }
 
@@ -849,15 +856,15 @@ body{
             margin-left: -1.2em;
         }
 
-         @media (max-width: 992px) {
+        @media (max-width: 992px) {
             .description {
-        margin-top: 7%;
-    }
-}
+                margin-top: 7%;
+            }
+        }
 
 
 
-        @media (max-width: 992px) and (min-width:800px){
+        @media (max-width: 992px) and (min-width:800px) {
 
             .generatedImage,
             .description {
@@ -869,8 +876,6 @@ body{
                 margin-bottom: 0px;
             }
         }
-
-
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -933,7 +938,8 @@ body{
         <header class="headbar bg-green text-white" id="utility-bill-header">
             <div class="headbar-inner fluid">
                 <div class="headbar-title h-auto">
-                    <div class="display-2 h1-mb text-uppercase fw-bold">Utility bill</div>
+                    <div class="display-2 h1-mb  fw-bold" style="line-height: normal;">UTILITY BILL - sample templates
+                        PDF, DOC, XLS and PSD | editable format</div>
                 </div>
             </div>
         </header>
@@ -946,49 +952,50 @@ body{
                 <img src="https://alaweermarket.com//utility-bill/images/Albania Albanian Power Corporation.jpg">
             </div>
             <div class="description">
-                <h1>Albania Electricity Bill Template – Editable PDF / Word / Excel</h1>
-                <h3 style="color: #1f1f1f;">Product Description:</h3>
-                <p id="Metadescription">Download a <span class="bold">realistic Albania electricity bill template</span>
-                    in <span class="bold">PDF, Word, and Excel formats.</span> Fully editable and printable, this <span
-                        class="bold">utility bill sample</span> is perfect for <span class="bold">proof of
-                        address format, mockups, training projects,</span> or <span class="bold">software
-                        testing.</span></p>
+                <h1>अल्बानिया बिजली बिल टेम्पलेट – संपादन योग्य PDF / Word / Excel</h1>
+                <h3 style="color: #1f1f1f;">उत्पाद विवरण:</h3>
+                <p id="Metadescription">
+                    <span class="bold">वास्तविक अल्बानिया बिजली बिल टेम्पलेट</span>
+                    <span class="bold">PDF, Word और Excel फ़ॉर्मेट</span> में डाउनलोड करें।
+                    यह पूरी तरह <span class="bold">संपादन योग्य और प्रिंटेबल</span> है।
+                    यह <span class="bold">यूटिलिटी बिल सैंपल</span>
+                    <span class="bold">पता प्रमाण, मॉकअप्स, प्रशिक्षण प्रोजेक्ट्स</span>
+                    या <span class="bold">सॉफ़्टवेयर टेस्टिंग</span> के लिए बिल्कुल सही है।
+                </p>
 
-
-                <h3 style="color: #1f1f1f;">Features:</h3>
+                <h3 style="color: #1f1f1f;">विशेषताएँ:</h3>
                 <ul class="features-list">
-                    <li>Editable in <span class="bold">Word, PDF & Excel</span></li>
-                    <li><span class="bold">High-resolution</span> & professional design</li>
-                    <li>Sections for <span class="bold">customer details, billing summary, usage history</span>, and
-                        barcode</li>
-                    <li>Can be printed <span class="bold">blank</span> or customized <span class="bold">digitally</span>
-                    </li>
+                    <li><span class="bold">Word, PDF और Excel</span> में संपादन योग्य</li>
+                    <li><span class="bold">हाई-रेज़ोल्यूशन</span> और प्रोफेशनल डिज़ाइन</li>
+                    <li><span class="bold">ग्राहक विवरण, बिल सारांश, उपयोग इतिहास</span> और बारकोड के लिए सेक्शन</li>
+                    <li><span class="bold">खाली प्रिंट</span> किया जा सकता है या <span class="bold">डिजिटली
+                            कस्टमाइज़</span> किया जा सकता है</li>
                 </ul>
 
-                <h3 style="color: #1f1f1f;">Why Choose This Template?</h3>
+                <h3 style="color: #1f1f1f;">क्यों चुनें यह टेम्पलेट?</h3>
                 <ul class="reasons-list">
-                    <li><span class="bold">Authentic layout</span>, easy to edit</li>
-                    <li><span class="bold">Perfect for proof of address</span> demonstrations</li>
-                    <li><span class="bold">Great for UI/UX mockups, educational use, or form validation</span></li>
-                    <li><span class="bold">Excel version includes automatic calculations</span> for totals & usage</li>
+                    <li><span class="bold">असली लेआउट</span>, आसानी से एडिट करने योग्य</li>
+                    <li><span class="bold">पता प्रमाण</span> डेमो के लिए परफेक्ट</li>
+                    <li><span class="bold">UI/UX मॉकअप्स, शैक्षिक उपयोग या फॉर्म वेलिडेशन</span> के लिए बेहतरीन</li>
+                    <li><span class="bold">Excel संस्करण में ऑटोमैटिक कैलकुलेशन</span> (कुल और उपयोग के लिए) शामिल</li>
                 </ul>
 
-                <h3 style="color: #1f1f1f;">Included Files:</h3>
+                <h3 style="color: #1f1f1f;">शामिल फाइलें:</h3>
                 <ul class="files-list">
                     <li>1x Word (docx)</li>
                     <li>1x PDF</li>
                     <li>1x Excel (xlsx)</li>
                 </ul>
 
-                <p id="Metadescription">👉 Instantly download, customize, and create your own utility bill sample in
-                    minutes.</p>
+                <p id="Metadescription">👉 तुरंत डाउनलोड करें, कस्टमाइज़ करें और कुछ ही मिनटों में अपना यूटिलिटी बिल
+                    सैंपल बनाएं।</p>
                 <br>
                 <div style="width: 100%;margin-bottom: 7%;">
                     <a href="https://extempl.com/product-category/utility-bill-pdf-examples/">
-                        <img style="width: 100%;" src="./images/download-20.png" alt="Download Template">
+                        <img style="width: 100%;" src="./images/download-20.png" alt="टेम्पलेट डाउनलोड करें">
                     </a>
                 </div>
-                <p style="margin-bottom: 4%;">Download now to quickly create high-quality designs!</p>
+                <p style="margin-bottom: 4%;">अभी डाउनलोड करें और जल्दी से उच्च-गुणवत्ता वाले डिज़ाइन तैयार करें!</p>
 
                 <div class="contacts">
                     <p>telegram: <a href="https://t.me/pretempl">axtempl</a></p>
@@ -997,6 +1004,7 @@ body{
                     <p>facebook: <a href="https://m.me/Oxtempl">oxtempl</a></p>
                 </div>
             </div>
+
 
 
         </div>
